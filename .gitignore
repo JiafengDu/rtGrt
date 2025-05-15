@@ -1,2 +1,47 @@
 # Python virtual environment
 venv
+
+# IntelliJ IDEA
+.idea/
+*.iml
+*.ipr
+*.iws
+out/
+
+# sbt
+target/
+project/project/
+project/target/
+lib_managed/
+.sbtserver/
+# Also ignore .bloop directory if you use Bloop build server
+.bloop/
+
+# Build Server Protocol (BSP)
+.bsp/
+
+# Operating System Files
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Logs
+logs/
+*.log
+
+# Local Scala REPL history
+.scala_history
+
+# Sensitive configuration - VERY IMPORTANT
+# If application.conf contains secrets like API keys, ignore it.
+# Commit a template file (e.g., application.conf.template) instead.
+data-collector/src/main/resources/application.conf
+
+# If you have other local config files
+# local.conf
+# *.local
+
+# Compiled Protocol Buffer files (if any)
+# target/pb_scala/
+# target/pb_java/
